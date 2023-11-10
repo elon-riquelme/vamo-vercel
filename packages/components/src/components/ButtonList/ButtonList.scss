@@ -1,0 +1,36 @@
+.left-navbar {
+  grid-area: navbar;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.left-navbar__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1;
+}
+
+.left-navbar__item {
+  font-size: 1.2em;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: background-color 0.2s ease;
+  border-radius: 1.8rem;
+  &:hover {
+    background-color: var(--selected-button, #cfd0d1);
+  }
+}
+
+
+

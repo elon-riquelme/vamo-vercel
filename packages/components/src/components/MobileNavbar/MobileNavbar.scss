@@ -1,0 +1,21 @@
+
+.bottom-navbar {
+  display: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  border-top: 1px solid var(--line-color, grey);
+}
+
+.bottom-navbar__button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color, black);
+  font-size: 24px;
+  padding: 10px;
+  transition: background-color 0.2s ease;
+}

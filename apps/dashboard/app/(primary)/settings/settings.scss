@@ -1,0 +1,84 @@
+
+
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+
+}
+
+// .items-list-item__button {
+//   flex: 1;
+//   background-color: violet;
+//   display: flex;
+//   border: 10px solid blue;
+// }
+
+.items-list-item {
+  width: 100%;
+}
+
+.items-list-item__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 18px;
+  padding: 10px;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+ 
+
+/* Add a wrapper class to the link and button for styling */
+.items-list-item {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+/* Style the link */
+.items-list-item__link {
+  text-decoration: none; /* Remove underline from link */
+  width: 100%;
+}
+
+/* Style the button */
+.items-list-item__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically within the button */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+/* Add space between the icon and text */
+.items-list-item__button i {
+  margin-right: 10px;
+}
+
+
+.items-list-item__button_icon {
+  align-self: flex-end;
+}
+
+.items-list-item:hover {
+  background-color: #1c1b1b; /* Change to your desired hover background color */
+  transition: background-color 0.3s ease;
+}
+
+.items-list-item_selected {
+  border-right: 2px solid rgb(20,155,240,1);
+  background-color: var(--disable-text-color); /* Change to your desired hover background color */
+  color: var(--background-color);
+  transition: background-color 0.3s ease;
+
+  & > button {
+    color: var(--background-color);
+  }
+
+}

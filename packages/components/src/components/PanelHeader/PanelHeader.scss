@@ -1,0 +1,18 @@
+.panel-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel-header__slot_left {
+  padding-right: 1.5rem;
+}
+
+.panel-header__slot_right {
+  padding-left: 1.5rem;
+}
+
+
+.panel-header__title {
+  flex: 1;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "lint": "lerna run lint"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-typescript-prettier": "^5.0.0",
+    "lerna": "7.1.5"
+  },
+  "optionalDependencies": {
+    "@nx/nx-linux-x64-gnu": "*"
+  }
+}

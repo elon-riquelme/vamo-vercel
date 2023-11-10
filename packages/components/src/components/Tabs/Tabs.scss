@@ -1,0 +1,35 @@
+/* styles.css */
+
+.tabs {
+  text-align: center;
+  border-bottom: 2px solid var(--line-color);
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  display: block;
+  color: var(--disable-text-color);
+}
+
+.tab:hover {
+  border-bottom: 2px solid #007bff;
+}
+
+.tab--active {
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+  color: var(--text-color)
+}
+
+
+
